@@ -27,7 +27,12 @@ payload:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      multiple: false
+      supervised: false
+      allowmanualinstall: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   content: This payload defines web domains that are under an enterprise's management.

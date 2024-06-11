@@ -26,7 +26,12 @@ payload:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      accessrights: AllowPasscodeRemovalAndLock
+      supervised: false
+      requiresdep: false
+      userenrollment:
+        mode: allowed
     watchOS:
       introduced: '10.0'
       accessrights: AllowPasscodeRemovalAndLock
@@ -66,6 +71,8 @@ payloadkeys:
       introduced: n/a
     macOS:
       introduced: '10.8'
+    visionOS:
+      introduced: n/a
     watchOS:
       introduced: n/a
   type: <string>

@@ -217,6 +217,19 @@ payloadkeys:
   presence: optional
   content: The key to skip the iMessage and FaceTime screen in iOS. This key is available
     in iOS 12 and later.
+- key: Intelligence
+  title: Skip Intelligence setup pane
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+    macOS:
+      introduced: '15.0'
+    tvOS:
+      introduced: n/a
+  type: <string>
+  presence: optional
+  content: The key to skip the Intelligence pane. This key is available in iOS 18
+    and later and macOS 15 and later.
 - key: Location
   title: Disables Location Services
   supportedOS:
@@ -467,7 +480,7 @@ payloadkeys:
       introduced: n/a
   type: <string>
   presence: optional
-  content: The key to skip the Software Update Complete pane. This field is available
+  content: The key to skip the Software Update Complete pane. This key is available
     in iOS 14 and later.
 - key: Wallpaper
   title: Skips Wallpaper selection
@@ -502,7 +515,7 @@ payloadkeys:
     iOS:
       introduced: '13.0'
     macOS:
-      introduced: n/a
+      introduced: '15.0'
     tvOS:
       introduced: n/a
   type: <string>

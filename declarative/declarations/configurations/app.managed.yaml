@@ -41,8 +41,9 @@ payloadkeys:
   title: Manifest URL
   type: <string>
   presence: optional
-  content: The URL of the manifest for the managed app. One and only one of 'AppStoreID',
-    'BundleID', or 'ManifestURL' must be present.
+  content: The URL of the manifest for the managed app. The manifest is returned as
+    a property list. One and only one of 'AppStoreID', 'BundleID', or 'ManifestURL'
+    must be present.
 - key: InstallBehavior
   title: Install Behavior
   type: <dictionary>

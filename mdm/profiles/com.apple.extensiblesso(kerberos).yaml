@@ -251,6 +251,16 @@ payloadkeys:
     content: The text version of the domain's password requirements. Only for use
       if 'pwReqComplexity' or 'pwReqLength' aren't specified. Available in macOS 10.15
       and later.
+  - key: pwReqRTFData
+    supportedOS:
+      iOS:
+        introduced: n/a
+      macOS:
+        introduced: '15.0'
+    type: <data>
+    presence: optional
+    content: RTF file formatted version of the domain’s password requirements. Only
+      for use if “pwReqComplexity” or “pwReqLength” aren’t specified. (macOS only)
   - key: pwChangeURL
     supportedOS:
       iOS:
@@ -390,6 +400,51 @@ payloadkeys:
       doesn't check for password expiration, show the password expiration in the menu,
       check for external password changes, perform password sync, or retrieve the
       home directory. Available in macOS 13 and later.
+  - key: identityIssuerAutoSelectFilter
+    supportedOS:
+      iOS:
+        introduced: n/a
+      macOS:
+        introduced: '15.0'
+    type: <string>
+    presence: optional
+    content: A string with wildcards that can use used to filter the list of available
+      SmartCards by issuer.  e.g  "*My CA2*".  If there is one remaining, it will
+      be auto-selected.  If there more than one remaining, then the list is shorter.  (macOS
+      only)
+  - key: allowSmartCard
+    supportedOS:
+      iOS:
+        introduced: n/a
+      macOS:
+        introduced: '15.0'
+    type: <boolean>
+    presence: optional
+    default: true
+    content: If set to true, the user to switch the user interface to SmartCard mode.
+      (macOS only)
+  - key: allowPassword
+    supportedOS:
+      iOS:
+        introduced: n/a
+      macOS:
+        introduced: '15.0'
+    type: <boolean>
+    presence: optional
+    default: true
+    content: If set to true, the user to switch the user interface to Password mode.
+      (macOS only)
+  - key: startInSmartCardMode
+    supportedOS:
+      iOS:
+        introduced: n/a
+      macOS:
+        introduced: '15.0'
+    type: <boolean>
+    presence: optional
+    default: false
+    content: If set to true, the user interface will start in SmartCard mode. (macOS
+      only)
 - key: Hosts
   type: <array>
   presence: optional

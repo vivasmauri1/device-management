@@ -25,7 +25,7 @@ payload:
       userenrollment:
         mode: allowed
     tvOS:
-      introduced: '6.1'
+      introduced: '9.0'
       multiple: true
       supervised: false
       allowmanualinstall: true
@@ -56,7 +56,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       supervised: true
   type: <boolean>
@@ -80,7 +83,9 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -128,7 +133,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -278,7 +286,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       supervised: true
   type: <boolean>
@@ -300,7 +311,9 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -362,7 +375,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -448,7 +461,8 @@ payloadkeys:
   type: <boolean>
   presence: optional
   default: true
-  content: If set to false, disables auto dim on iPads with OLED displays.
+  content: If 'false', disables auto dim on iPads with OLED displays. Available in
+    iOS 17.4 and later.
 - key: allowAutomaticAppDownloads
   title: Allow Automatic App Downloads
   supportedOS:
@@ -602,7 +616,6 @@ payloadkeys:
   supportedOS:
     iOS:
       introduced: '4.0'
-      supervised: false
       userenrollment:
         mode: forbidden
     macOS:
@@ -611,9 +624,10 @@ payloadkeys:
         mode: forbidden
     tvOS:
       introduced: '17.0'
-      supervised: false
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -690,7 +704,6 @@ payloadkeys:
   supportedOS:
     iOS:
       introduced: '5.0'
-      supervised: false
       userenrollment:
         mode: forbidden
     macOS:
@@ -698,7 +711,9 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -780,7 +795,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -813,7 +831,6 @@ payloadkeys:
   supportedOS:
     iOS:
       introduced: '7.0'
-      supervised: false
       userenrollment:
         mode: forbidden
     macOS:
@@ -823,7 +840,9 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -884,7 +903,9 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -908,7 +929,8 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1017,7 +1039,10 @@ payloadkeys:
       introduced: '11.0'
       supervised: true
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1055,7 +1080,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
   type: <boolean>
   presence: optional
   default: true
@@ -1075,7 +1100,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1120,7 +1148,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1142,7 +1173,9 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1205,7 +1238,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1235,6 +1271,27 @@ payloadkeys:
   default: true
   content: If 'false', the system disables modifications of eSIMs. Requires a supervised
     device. Available in iOS 12.1 and later.
+- key: allowESIMOutgoingTransfers
+  title: Allow eSIM Outgoing Transfers
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: n/a
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: If 'false', prevents the transfer of an eSIM from the device on which the
+    restriction is installed to a different device. Available in iOS 18 and later.
 - key: allowExplicitContent
   title: Allow Explicit Content
   supportedOS:
@@ -1291,7 +1348,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1397,7 +1457,9 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1421,7 +1483,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1775,7 +1840,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1796,7 +1861,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      allowmanualinstall: false
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1928,7 +1996,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1946,7 +2017,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -1964,7 +2035,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2050,7 +2121,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2073,7 +2147,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2125,7 +2202,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2417,7 +2497,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
   type: <boolean>
   presence: optional
   default: true
@@ -2541,7 +2621,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2582,7 +2665,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       supervised: true
   type: <boolean>
@@ -2606,7 +2692,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2646,7 +2735,8 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      allowmanualinstall: false
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2734,7 +2824,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2776,7 +2869,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -2826,8 +2922,8 @@ payloadkeys:
   type: <boolean>
   presence: optional
   default: true
-  content: When 'false', the device prevents installation of apps directly from the
-    web.
+  content: If 'false', the device prevents installation of apps directly from the
+    web. Available in iOS 17.5 and later.
 - key: autonomousSingleAppModePermittedAppIDs
   supportedOS:
     iOS:
@@ -3039,7 +3135,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -3054,7 +3150,7 @@ payloadkeys:
     macOS:
       introduced: n/a
     tvOS:
-      introduced: '6.2'
+      introduced: '9.0'
     visionOS:
       introduced: n/a
     watchOS:
@@ -3140,7 +3236,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -3164,7 +3263,10 @@ payloadkeys:
       introduced: '12.2'
       supervised: true
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -3407,7 +3509,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
   type: <boolean>
   presence: optional
   default: false
@@ -3423,7 +3525,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
   type: <boolean>
   presence: optional
   default: false
@@ -3502,7 +3604,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -3658,7 +3763,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
     watchOS:
       introduced: n/a
   type: <boolean>
@@ -3710,7 +3815,10 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '2.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
     watchOS:
       introduced: n/a
   type: <boolean>

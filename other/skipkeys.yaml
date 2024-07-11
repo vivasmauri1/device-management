@@ -406,8 +406,8 @@ payloadkeys:
       always-skippable: false
   type: <string>
   presence: optional
-  content: The key to skip the Tap To Set Up option in AppleTV about using an iOS
-    device to set up your AppleTV. This key is available in tvOS 10.2 and later.
+  content: The key to skip the Tap To Set Up option in Apple TV related to using an
+    iOS device to set up your Apple TV. This key is available in tvOS 10.2 and later.
 - key: TermsOfAddress
   title: Skips Terms of Address
   supportedOS:

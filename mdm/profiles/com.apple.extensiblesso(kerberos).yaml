@@ -27,7 +27,12 @@ payload:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: n/a
+      introduced: '1.1'
+      multiple: true
+      supervised: false
+      allowmanualinstall: false
+      userenrollment:
+        mode: allowed
     watchOS:
       introduced: n/a
   content: Configures the included Kerberos extension that performs SSO on behalf
@@ -117,6 +122,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '12.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: false
@@ -172,6 +179,8 @@ payloadkeys:
     supportedOS:
       iOS:
         introduced: n/a
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: true
@@ -194,6 +203,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         deprecated: '12.0'
+      visionOS:
+        introduced: n/a
     type: <integer>
     presence: optional
     content: The number of days that the system allows using passwords on this domain.
@@ -202,6 +213,8 @@ payloadkeys:
   - key: pwNotificationDays
     supportedOS:
       iOS:
+        introduced: n/a
+      visionOS:
         introduced: n/a
     type: <integer>
     presence: optional
@@ -213,6 +226,8 @@ payloadkeys:
     supportedOS:
       iOS:
         introduced: n/a
+      visionOS:
+        introduced: n/a
     type: <integer>
     presence: optional
     content: The minimum length of passwords on the domain.Available in macOS 10.15
@@ -220,6 +235,8 @@ payloadkeys:
   - key: pwReqComplexity
     supportedOS:
       iOS:
+        introduced: n/a
+      visionOS:
         introduced: n/a
     type: <boolean>
     presence: optional
@@ -230,6 +247,8 @@ payloadkeys:
     supportedOS:
       iOS:
         introduced: n/a
+      visionOS:
+        introduced: n/a
     type: <integer>
     presence: optional
     content: The minimum age of passwords before the system allows changing them on
@@ -238,6 +257,8 @@ payloadkeys:
     supportedOS:
       iOS:
         introduced: n/a
+      visionOS:
+        introduced: n/a
     type: <integer>
     presence: optional
     content: The number of prior passwords that the system disallows reuse on this
@@ -245,6 +266,8 @@ payloadkeys:
   - key: pwReqText
     supportedOS:
       iOS:
+        introduced: n/a
+      visionOS:
         introduced: n/a
     type: <string>
     presence: optional
@@ -257,6 +280,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '15.0'
+      visionOS:
+        introduced: n/a
     type: <data>
     presence: optional
     content: RTF file formatted version of the domain’s password requirements. Only
@@ -265,6 +290,8 @@ payloadkeys:
     supportedOS:
       iOS:
         introduced: n/a
+      visionOS:
+        introduced: n/a
     type: <string>
     presence: optional
     content: This URL will launch in the user's default web browser when they initiate
@@ -272,6 +299,8 @@ payloadkeys:
   - key: syncLocalPassword
     supportedOS:
       iOS:
+        introduced: n/a
+      visionOS:
         introduced: n/a
     type: <boolean>
     presence: optional
@@ -286,6 +315,8 @@ payloadkeys:
       macOS:
         introduced: '11.0'
         deprecated: '12.0'
+      visionOS:
+        introduced: n/a
     type: <integer>
     presence: optional
     default: 900
@@ -298,6 +329,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '11.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: false
@@ -310,6 +343,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '11.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: true
@@ -371,6 +406,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '13.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: false
@@ -382,6 +419,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '13.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: true
@@ -406,6 +445,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '15.0'
+      visionOS:
+        introduced: n/a
     type: <string>
     presence: optional
     content: A string with wildcards that can use used to filter the list of available
@@ -418,6 +459,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '15.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: true
@@ -429,6 +472,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '15.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: true
@@ -440,6 +485,8 @@ payloadkeys:
         introduced: n/a
       macOS:
         introduced: '15.0'
+      visionOS:
+        introduced: n/a
     type: <boolean>
     presence: optional
     default: false

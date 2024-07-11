@@ -2308,10 +2308,15 @@ responsekeys:
       content: The date of the last software update scan. This value is available
         in macOS 10.11 and later.
     - key: PreviousScanResult
+      supportedOS:
+        macOS:
+          deprecated: '11.0'
+          removed: '15.0'
       type: <string>
       presence: optional
       content: The result code of last software update scan; '”0”' = success. This
-        value is available in macOS 10.11 and later.
+        value is available in macOS 10.11 and later. This key was removed in macOS
+        15 as it has been unsupported since macOS 11.
     - key: PerformPeriodicCheck
       type: <boolean>
       content: If 'true', start a new scan. This value is available in macOS 10.11

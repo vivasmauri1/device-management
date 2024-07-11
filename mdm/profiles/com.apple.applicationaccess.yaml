@@ -1519,6 +1519,30 @@ payloadkeys:
   content: If 'false', the system disables Game Center, and the system removes its
     icon from the Home screen. Available in iOS 6 and later, and macOS 10.13 and later.
     Requires a supervised device in iOS.
+- key: allowGenmoji
+  title: Allow Genmoji
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      sharedipad:
+        mode: forbidden
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: '15.0'
+      userenrollment:
+        mode: forbidden
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: When false, prohibits creating new Genmoji.
 - key: allowGlobalBackgroundFetchWhenRoaming
   title: Allow Automatic Sync While Roaming
   supportedOS:
@@ -1563,6 +1587,52 @@ payloadkeys:
     disables all pairing. Host pairing lets the administrator control if an iOS device
     can pair with a host Mac or PC. Requires a supervised device. Available in iOS
     7 and later.
+- key: allowImagePlayground
+  title: Allow Image Playground
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      sharedipad:
+        mode: forbidden
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: '15.0'
+      userenrollment:
+        mode: forbidden
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: If false, prohibits the use of image generation.
+- key: allowImageWand
+  title: Allow Image Wand
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      sharedipad:
+        mode: forbidden
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: n/a
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: When false, prohibits the use of Image Wand.
 - key: allowInAppPurchases
   title: Allow In App Purchases
   supportedOS:
@@ -1603,6 +1673,30 @@ payloadkeys:
   default: true
   content: If 'false', the system prevents modifying the Internet Sharing setting
     in System Settings. Available in macOS 14 and later.
+- key: allowiPhoneMirroring
+  title: Allow iPhone mirroring
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: '15.0'
+      userenrollment:
+        mode: forbidden
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: If false, prohibits the use of iPhone Mirroring. When used on macOS, this
+    prevents the Mac from mirroring any iPhone. When used on iOS, this prevents the
+    iPhone from mirroring to any Mac.
 - key: allowiPhoneWidgetsOnMac
   title: Allow iPhone widget on Mac
   supportedOS:
@@ -2235,6 +2329,26 @@ payloadkeys:
   default: true
   content: If 'false', the system disables modifications of the personal hotspot setting.
     Requires a supervised device. Available in iOS 12.2 and later.
+- key: allowPersonalizedHandwritingResults
+  title: Allow personalized handwriting results
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: n/a
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: If false, prevents the system from generating text in the user's handwriting.
 - key: allowPhotoStream
   title: Allow Photo Stream
   supportedOS:
@@ -2835,6 +2949,27 @@ payloadkeys:
   default: true
   content: If 'false', the system hides the FaceTime app. Available in iOS 4 and later.
     Requires a supervised device in iOS 13 and later.
+- key: allowVideoConferencingRemoteControl
+  title: Allow Video Conferencing Remote Control
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: n/a
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: When false, disables the ability for a remote FaceTime session to request
+    control of the device.
 - key: allowVoiceDialing
   title: Allow Voice Dialing While Device is Locked
   supportedOS:
@@ -2924,6 +3059,30 @@ payloadkeys:
   default: true
   content: If 'false', the device prevents installation of apps directly from the
     web. Available in iOS 17.5 and later.
+- key: allowWritingTools
+  title: Allow writing tools
+  supportedOS:
+    iOS:
+      introduced: '18.0'
+      supervised: true
+      sharedipad:
+        mode: forbidden
+      userenrollment:
+        mode: forbidden
+    macOS:
+      introduced: '15.0'
+      userenrollment:
+        mode: forbidden
+    tvOS:
+      introduced: n/a
+    visionOS:
+      introduced: n/a
+    watchOS:
+      introduced: n/a
+  type: <boolean>
+  presence: optional
+  default: true
+  content: If false, disables Apple Intelligence writing tools.
 - key: autonomousSingleAppModePermittedAppIDs
   supportedOS:
     iOS:
@@ -3525,7 +3684,7 @@ payloadkeys:
     tvOS:
       introduced: n/a
     visionOS:
-      introduced: '2.0'
+      introduced: n/a
   type: <boolean>
   presence: optional
   default: false

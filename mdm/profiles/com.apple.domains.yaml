@@ -39,6 +39,9 @@ payload:
 payloadkeys:
 - key: EmailDomains
   title: Email Domains
+  supportedOS:
+    visionOS:
+      introduced: n/a
   type: <array>
   presence: optional
   content: |-

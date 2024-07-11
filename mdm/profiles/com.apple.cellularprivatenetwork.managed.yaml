@@ -5,7 +5,7 @@ payload:
   supportedOS:
     iOS:
       introduced: '17.0'
-      multiple: false
+      multiple: true
       supervised: false
       allowmanualinstall: true
       sharedipad:
@@ -24,7 +24,7 @@ payload:
       introduced: n/a
   content: Payload can be used to provide device info on private network deployments
     including geographical location, preference over wifi, and network deployment
-    type.
+    type. Only five Cellular Private Networks can be configured simultaneously.
 payloadkeys:
 - key: Geofences
   type: <array>

@@ -20,6 +20,12 @@ a dictionary of application preference domain identifiers to
 `ManagedPreference.PreferenceDomain`s (rather than a single
 `ManagedPreference.PreferenceDomain`).
 
+### mdm/profiles/com.apple.cellularprivatenetwork.managed.yaml
+
+iOS 17 supported multiple private network payloads, but the `multiple` key was set to false.
+
+iOS 17 also mistakenly forbade multiple private network payloads in a single profile.
+
 ## iOS 17 / macOS 14
 
 ### mdm/profiles/com.apple.education.yaml

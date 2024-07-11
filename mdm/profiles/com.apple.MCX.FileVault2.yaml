@@ -68,7 +68,8 @@ payloadkeys:
 - key: Certificate
   type: <data>
   presence: optional
-  content: The DER-encoded certificate data if 'UseRecoveryKey' is 'true'.
+  content: DER-encoded certificate data if an institutional recovery key will be added.
+    This key is not supported on Macs with Apple silicon.
 - key: PayloadCertificateUUID
   type: <string>
   presence: optional

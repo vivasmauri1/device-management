@@ -48,7 +48,7 @@ payloadkeys:
   presence: optional
   content: The file name of the enclosed certificate.
 - key: PayloadContent
-  title: Payload Certificate Filename
+  title: Payload Certificate Data
   type: <data>
   presence: required
   content: The binary representation of the payload encoded in base64.

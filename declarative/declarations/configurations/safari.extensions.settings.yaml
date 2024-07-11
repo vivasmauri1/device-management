@@ -37,7 +37,10 @@ payloadkeys:
     presence: optional
     content: The composed identifier of the managed extension, or "*" for all extensions.
       In order for the extension to be managed, its host app must be present on the
-      device.
+      device. To generate this string use codesign -dv <path_to_appex>. The browser
+      extension is located in the PlugIns folder inside the app bundle. The expected
+      format is "Identifier (TeamIdentifier)". For extensions that are not also available
+      on macOS the app developer will need to provide this information.
     subkeytype: ExtensionDictionary
     subkeys:
     - key: State

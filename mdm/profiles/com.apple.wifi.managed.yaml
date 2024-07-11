@@ -618,7 +618,7 @@ payloadkeys:
   presence: optional
   content: The password used to authenticate to the proxy server.
 - key: ProxyPACURL
-  title: Proxy Username
+  title: Proxy PAC URL
   supportedOS:
     iOS:
       userenrollment:

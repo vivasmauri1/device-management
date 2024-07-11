@@ -71,8 +71,25 @@ payloadkeys:
     presence: optional
     content: A dictionary that describes the app's license.
     subkeys:
+    - key: Assignment
+      title: Assignment
+      type: <string>
+      presence: optional
+      rangelist:
+      - Device
+      - User
+      content: |-
+        Indicates what type of license to use when an App Store app is installed:
+        * Device - the license is assigned to the device.
+        * User - the license is assigned to the user.
+        This key must be present for App Store apps.
     - key: VPPType
       title: VPP Type
+      supportedOS:
+        iOS:
+          removed: '18.0'
+        macOS:
+          removed: '15.0'
       type: <string>
       presence: optional
       rangelist:

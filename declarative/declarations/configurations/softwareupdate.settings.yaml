@@ -242,10 +242,10 @@ payloadkeys:
     content: |-
       Specifies whether beta program enrollment can be controlled by the user in software update settings UI:
       * "Allowed" - the user can enroll in any applicable beta programs associated with their
-        logged in Apple ID. If the `OfferPrograms` key is present, then the programs listed in
+        logged in Apple Account. If the `OfferPrograms` key is present, then the programs listed in
         that key are also presented to the user.
       * "AlwaysOn" - the beta programs specified by the organization are used, and the user
-        is not be able to enroll in a beta program using their logged in Apple ID. The device
+        is not be able to enroll in a beta program using their logged in Apple Account. The device
         is automatically enrolled into the beta program specified by the `RequireProgram` key if
         it is present. Otherwise, the programs listed in the `OfferPrograms` key are
         presented to the user to choose which to enroll with.

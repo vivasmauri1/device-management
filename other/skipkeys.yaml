@@ -72,11 +72,11 @@ payloadkeys:
   content: The key to skip the Choose Your Look screen. This key is available in iOS
     13+ and macOS 10.14 and later.
 - key: AppleID
-  title: Disables signing in to Apple ID and iCloud
+  title: Disables signing in to an Apple Account and iCloud
   type: <string>
   presence: optional
-  content: The key to skip Apple ID setup. This key is available in iOS 7.0+, tvOS
-    10.2 and later, and macOS 10.9 and later.
+  content: The key to skip Apple Account setup. This key is available in iOS 7.0+,
+    tvOS 10.2 and later, and macOS 10.9 and later.
 - key: AppStore
   title: Skips AppStore information pane
   supportedOS:
@@ -148,7 +148,7 @@ payloadkeys:
       introduced: n/a
   type: <string>
   presence: optional
-  content: The key to skip the Lockdown Mode pane if an Apple ID is set up. Available
+  content: The key to skip the Lockdown Mode pane if an Apple Account is set up. Available
     in macOS 14 and later, and iOS 17.1 and later.
 - key: FileVault
   title: Skip configuration of FileVault

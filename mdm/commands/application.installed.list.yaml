@@ -221,8 +221,8 @@ responsekeys:
           introduced: '11.3'
       type: <boolean>
       presence: optional
-      content: If 'true', installing the app didn't require an Apple ID. This value
-        is available in iOS 11.3 and later, and tvOS 11.3 and later.
+      content: If 'true', installing the app didn't require an Apple Account. This
+        value is available in iOS 11.3 and later, and tvOS 11.3 and later.
     - key: BetaApp
       supportedOS:
         iOS:

@@ -239,7 +239,7 @@ payloadkeys:
       type: <string>
       presence: optional
       content: |-
-        The managed Apple ID for this user.
+        The Managed Apple Account for this user.
         Not required to configure Classroom, but if set the system uses it.
         Required to configure the Shared iPad login screen.
     - key: PasscodeType

@@ -42,7 +42,7 @@ payloadkeys:
   type: <boolean>
   presence: optional
   default: false
-  content: If 'true', the system skips the Apple ID setup pane.
+  content: If 'true', the system skips the Apple Account setup pane.
 - key: SkipSiriSetup
   supportedOS:
     iOS:

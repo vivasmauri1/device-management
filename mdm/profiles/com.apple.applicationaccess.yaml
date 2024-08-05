@@ -66,7 +66,7 @@ payloadkeys:
   presence: optional
   default: true
   content: If 'false', the system disables modification of accounts such as Apple
-    IDs and Internet-based accounts such as Mail, Contacts, and Calendar. Available
+    Accounts and Internet-based accounts such as Mail, Contacts, and Calendar. Available
     in iOS 7 and later, macOS 14 and later, and watchOS 10 and later. Requires a supervised
     device in iOS and watchOS.
 - key: allowActivityContinuation
@@ -93,8 +93,9 @@ payloadkeys:
   default: true
   content: If 'false', the system disables activity continuation. Available in iOS
     8 and later, and macOS 10.15 and later. Support for this restriction on unsupervised
-    devices and with managed Apple IDs is deprecated. In a future release, this restriction
-    will begin requiring supervision and will apply to personal Apple IDs only.
+    devices and with Managed Apple Accounts is deprecated. In a future release, this
+    restriction will begin requiring supervision and will apply to personal Apple
+    Accounts only.
 - key: allowAddingGameCenterFriends
   title: Allow Adding Game Center Friends
   supportedOS:
@@ -807,7 +808,7 @@ payloadkeys:
   content: If 'false', the system disables document and key-value syncing to iCloud.
     Available in iOS 5 and later, and macOS 10.11 and later. Requires a supervised
     device in iOS 13 and later, and Shared iPad doesn't support it. Support for this
-    restriction on unsupervised devices and with managed Apple IDs is deprecated.
+    restriction on unsupervised devices and with Managed Apple Accounts is deprecated.
 - key: allowCloudFreeform
   supportedOS:
     iOS:
@@ -850,7 +851,7 @@ payloadkeys:
   default: true
   content: If 'false', the system disables iCloud keychain synchronization. Available
     in iOS 7 and later, and macOS 10.12 and later. Support for this restriction on
-    unsupervised devices and with managed Apple IDs is deprecated.
+    unsupervised devices and with Managed Apple Accounts is deprecated.
 - key: allowCloudMail
   supportedOS:
     iOS:
@@ -914,7 +915,8 @@ payloadkeys:
   content: If 'false', the system disables iCloud Photo Library. The system removes
     any photos from local storage that aren't fully downloaded from iCloud Photo Library
     to the device. Available in iOS 9 and later, and macOS 10.12 and later. Support
-    for this restriction on unsupervised devices and with managed Apple IDs is deprecated.
+    for this restriction on unsupervised devices and with Managed Apple Accounts is
+    deprecated.
 - key: allowCloudPrivateRelay
   supportedOS:
     iOS:
@@ -938,7 +940,7 @@ payloadkeys:
   default: true
   content: If 'false', the system disables iCloud Private Relay. Available in iOS
     15 and later, and in macOS 12 and later. Requires a supervised device in iOS.
-    Support for this restriction on unsupervised devices and with managed Apple IDs
+    Support for this restriction on unsupervised devices and with Managed Apple Accounts
     is deprecated.
 - key: allowCloudReminders
   supportedOS:
@@ -1719,8 +1721,8 @@ payloadkeys:
   presence: optional
   default: true
   content: If 'false', the system disallows iPhone widgets on a Mac that has signed
-    in the same Apple ID for iCloud. Requires a supervised device. Available on iOS
-    17 and later.
+    in the same Apple Account for iCloud. Requires a supervised device. Available
+    on iOS 17 and later.
 - key: allowiTunes
   title: Allow use of iTunes
   supportedOS:

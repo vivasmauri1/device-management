@@ -122,7 +122,7 @@ payloadkeys:
     If 'true', the device uses the development APNS servers. Otherwise, the device uses the production servers.
     Set to 'false' if your Apple Push Notification Service certificate was issued by the Apple Push Certificate Portal ('https://identity.apple.com/pushcert'). That portal only issues certificates for the production push environment.
 - key: ManagedAppleID
-  title: Managed Apple ID
+  title: Managed Apple Account
   supportedOS:
     iOS:
       introduced: '13.1'
@@ -145,10 +145,10 @@ payloadkeys:
   type: <string>
   presence: optional
   content: |-
-    The Managed Apple ID of the user. Previously required for profile-driven user enrollment.
+    The Managed Apple Account of the user. Previously required for profile-driven user enrollment.
     Removed as of iOS 18 and macOS 15.
 - key: AssignedManagedAppleID
-  title: Assigned Managed Apple ID
+  title: Assigned Managed Apple Account
   supportedOS:
     iOS:
       introduced: '15.0'
@@ -161,7 +161,7 @@ payloadkeys:
   type: <string>
   presence: optional
   content: |-
-    The Managed Apple ID pre-assigned to the authenticated user. The system only uses this value with account-driven enrollment.
+    The Managed Apple Account pre-assigned to the authenticated user. The system only uses this value with account-driven enrollment.
     When updating the payload, the value of this key must not change. Any change is an error, and the update rejected.
     Available in iOS 15 and later.
 - key: EnrollmentMode
